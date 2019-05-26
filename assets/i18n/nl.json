@@ -1,0 +1,39 @@
+{
+  "shared": {
+    "movie-app-title": "Movie Finder",
+    "search": "Zoeken",
+    "featured": "kenmerken"
+  },
+
+  "search": {
+    "plot": "Plot",
+    "search-text-required": "De titel van de film is verplicht.",
+    "search-movie-btn": "Zoek film",
+    "search-title": "Movie Finder - films zoeken op titel",
+    "search-subtitle": "Zoek met een ander trefwoord"
+  },
+
+  "movie-layout": {
+    "title": "Titel",
+    "year": "Jaar",
+    "rated": "Beoordeeld",
+    "released": "Vrijgelaten",
+    "runtime": "Runtime",
+    "genre": "Genre",
+    "director": "Regisseur",
+    "writer": "Writer",
+    "actors": "Writer",
+    "plot": "Plot",
+    "language": "Taal",
+    "awards": "Awards",
+    "poster": "Poster",
+    "list-of-ratings": "Lijst met beoordelingen",
+    "imdbRating": "Imdb-beoordeling",
+    "imdbVotes": "Imdb Votes",
+    "type": "Type",
+    "read-more": "Lees verder...",
+    "movie-found": "Film '{{title}}' gevonden",
+    "no-movie-found": "OOPS, film niet gevonden !!!",
+    "poster-not-available": "Poster is niet beschikbaar !!!!"
+  }
+}
