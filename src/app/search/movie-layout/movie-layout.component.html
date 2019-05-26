@@ -18,7 +18,7 @@
       <!-- movie poster -->
       <img fxFlexAlign="center" *ngIf="movie.Poster !== 'N/A'" mat-card-image src="{{movie.Poster}}"
         alt="Poster is not available" fxFlex="25" fxFlex.lt-sm="100">
-      <img fxFlexAlign="center" *ngIf="movie.Poster === 'N/A'" mat-card-image src="../../../assets/images/no-poster.jpg"
+      <img fxFlexAlign="center" *ngIf="movie.Poster === 'N/A'" mat-card-image src="./assets/images/no-poster.jpg"
         alt="{{'movie-layout.poster-not-available'| translate}}" fxFlex="30">
 
       <div fxLayout="column" fxFlex fxLayoutGap="10px">
