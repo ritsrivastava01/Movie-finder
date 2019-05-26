@@ -32,7 +32,7 @@ export class SearchComponent implements OnInit {
     ];
 
     this.searchFormControlGroup = this.fb.group({
-      inputSearch: ['Avengers', Validators.required],
+      inputSearch: ['', Validators.required],
       inputPlot: [this.plots[0].value]
     });
 
