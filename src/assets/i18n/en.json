@@ -10,7 +10,10 @@
     "search-text-required": "The movie title is required.",
     "search-movie-btn": "Search Movie",
     "search-title": "Movie Finder - search movies by title",
-    "search-subtitle": "Please search with another keyword"
+    "search-subtitle": "Please search with another keyword",
+    "search-placeholder":"Search for movie by title...",
+    "full":"Full",
+    "short":"Short"
   },
 
   "movie-layout": {

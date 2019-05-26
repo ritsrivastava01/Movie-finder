@@ -4,7 +4,7 @@
     <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="50px" fxLayoutAlign="stretch  center">
       <!-- Search Text box -->
       <mat-form-field fxFlex="50">
-        <input matInput placeholder="Search for movie by title..." formControlName="inputSearch" required>
+        <input matInput placeholder="{{'search.search-placeholder'| translate}}" formControlName="inputSearch" required>
         <mat-error *ngIf="frm.inputSearch?.errors?.required">
           {{'search.search-text-required'| translate}}
         </mat-error>
@@ -16,7 +16,7 @@
         </mat-label>
         <mat-select formControlName="inputPlot" [compareWith]="compareFn">
           <mat-option *ngFor="let plot of plots" [value]="plot.value">
-            {{plot.value}}
+            {{ 'search.'+ plot.value | translate}}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -32,7 +32,7 @@
 
 
   <div class="no-movie" *ngIf="!searchedMovie">
-    <img src="../../../assets/images/find-movie.png">
+    <img src="./assets/images/find-movie.png">
     <h2>{{'search.search-title' | translate}}</h2>
     <span>{{'search.search-subtitle'| translate}}</span>
   </div>

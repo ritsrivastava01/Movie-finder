@@ -4,6 +4,6 @@ export const CONSTANTS = {
 
     // Plot constants
     PLOT_LENGTH: 200,
-    PLOT_FULL: 'Full',
-    PLOT_SHORT: 'Short',
+    PLOT_FULL: 'full',
+    PLOT_SHORT: 'short',
 };

@@ -10,7 +10,10 @@
     "search-text-required": "De titel van de film is verplicht.",
     "search-movie-btn": "Zoek film",
     "search-title": "Movie Finder - films zoeken op titel",
-    "search-subtitle": "Zoek met een ander trefwoord"
+    "search-subtitle": "Zoek met een ander trefwoord",
+    "search-placeholder":"Zoeken naar film op titel ...",
+    "full":"Vol",
+    "short":"Kort"
   },
 
   "movie-layout": {

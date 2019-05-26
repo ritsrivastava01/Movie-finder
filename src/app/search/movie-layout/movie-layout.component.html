@@ -5,7 +5,7 @@
     <div mat-card-avatar class="header-image" *ngIf="movie.Poster !== 'N/A'"
       [style.backgroundImage]="'url('+ movie?.Poster +')'"></div>
     <div mat-card-avatar class="header-image" *ngIf="movie.Poster === 'N/A'"
-      [style.backgroundImage]="'url(../../../../../assets/images/no-poster.jpg)'"></div>
+      [style.backgroundImage]="'url(./assets/images/no-poster.jpg)'"></div>
 
     <mat-card-title>{{movie.Title}}</mat-card-title>
     <mat-card-subtitle>imdbRating: {{movie.imdbRating}}</mat-card-subtitle>
