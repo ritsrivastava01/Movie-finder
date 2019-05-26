@@ -1,0 +1,41 @@
+<div fxLayout="column" fxLayoutGap="1em" fxFlexFill>
+
+  <form [formGroup]="searchFormControlGroup">
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="50px" fxLayoutAlign="stretch  center">
+      <!-- Search Text box -->
+      <mat-form-field fxFlex="50">
+        <input matInput placeholder="Search for movie by title..." formControlName="inputSearch" required>
+        <mat-error *ngIf="frm.inputSearch?.errors?.required">
+          {{'search.search-text-required'| translate}}
+        </mat-error>
+      </mat-form-field>
+   
+      <!-- Plot drop down -->
+      <mat-form-field fxFlex="30">
+        <mat-label>{{'search.plot' | translate}}
+        </mat-label>
+        <mat-select formControlName="inputPlot" [compareWith]="compareFn">
+          <mat-option *ngFor="let plot of plots" [value]="plot.value">
+            {{plot.value}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+   
+      <!-- Search Button  -->
+      <button mat-raised-button color="primary" (click)="SearchClicked()" fxFlex="20">
+        <mat-icon class="mat-18">search </mat-icon>
+        {{'search.search-movie-btn' | translate}}
+      </button>
+    </div>
+  </form>
+
+
+
+  <div class="no-movie" *ngIf="!searchedMovie">
+    <img src="../../../assets/images/find-movie.png">
+    <h2>{{'search.search-title' | translate}}</h2>
+    <span>{{'search.search-subtitle'| translate}}</span>
+  </div>
+  <app-movie-layout [movie]="searchedMovie" *ngIf="searchedMovie"></app-movie-layout>
+
+</div>

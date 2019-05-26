@@ -1,0 +1,12 @@
+:host {
+
+  a {
+    color: blue;
+
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+}

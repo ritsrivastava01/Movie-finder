@@ -1,0 +1,34 @@
+
+<mat-card class="example-card">
+
+  <!-- Card Header -->
+  <mat-card-header>
+    <div mat-card-avatar class="header-image" *ngIf="movie.Poster !== 'N/A'"
+      [style.backgroundImage]="'url('+ movie?.Poster +')'"></div>
+    <mat-card-title>{{movie.Title}}</mat-card-title>
+    <mat-card-subtitle>{{movie.Year}}</mat-card-subtitle>
+  </mat-card-header>
+
+  <!-- Card content -->
+  <mat-card-content>
+
+    <div fxLayout="row" fxLayout.lt-sm="column" fxLayoutGap="50px">
+    
+    <!-- Movie Image -->
+      <img fxFlexAlign="center" mat-card-image src="{{movie.Poster}}" alt="Poster is not available">
+
+       <!--Row for Plot and Awards  -->
+       <div fxLayout="column" fxLayoutGap="20px" >
+          <div fxFlex>
+            <app-movie-row-info flexDirection="column" [headerText]="'movie-layout.plot'| translate" [value]="movie?.Plot">
+            </app-movie-row-info>
+          </div>
+          <div fxFlex >
+            <app-movie-row-info flexDirection="column"  [headerText]="'movie-layout.awards'| translate" [value]="movie?.Awards">
+            </app-movie-row-info>
+          </div>
+        </div>
+    </div>
+  </mat-card-content>
+
+</mat-card>

@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" ngClass.lt-sm="small-device">
+  <mat-icon >local_movies</mat-icon>
+  <span class="title">{{'shared.movie-app-title'| translate}}</span>
+
+  <!-- This fills the remaining space of the current row -->
+   <span class="fill-remaining-space"></span>
+
+   <!-- Other page option -->
+  <button mat-button (click)="loadPage('search')" class="hide-on-small-only	">{{'shared.search'| translate}}</button>
+  <button mat-button (click)="loadPage('featured')" class="hide-on-small-only	">{{'shared.featured'| translate}}</button>
+  <button mat-button [matMenuTriggerFor]="menu">{{selectedLanguage}}<mat-icon >expand_more</mat-icon></button>
+
+<!-- USed to show the language option -->
+  <mat-menu #menu="matMenu">
+    <button mat-menu-item *ngFor="let item of languages" (click)="changeLanguage(item)">{{item.name}}</button>
+</mat-menu> 
+</mat-toolbar>

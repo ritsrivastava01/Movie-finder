@@ -1,0 +1,25 @@
+:host {
+
+  div {
+    width: 100%;
+  }
+
+  form {
+    
+    button {
+      height: 80%;
+    }
+  }
+
+  .no-movie {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+
+    img {
+      width: 30%;
+    }
+  }
+}

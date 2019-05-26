@@ -1,0 +1,20 @@
+<div fxLayout="{{flexDirection}}">
+
+    <!--used to shoe the header -->
+    <div fxFlex="{{showReadMore? 19 : 40}}" fxFlex.lt-sm="40" class="mat-subheading-2">{{headerText}} :</div>
+
+    <!-- USed to show the value -->
+    <div class="mat-body-1" fxFlex *ngIf="!ShowAsList && !showReadMore">{{value}}</div>
+
+    <!-- Used to shoe the list -->
+    <div class="mat-body-1" fxFlex *ngIf="ShowAsList && !showReadMore">
+        <ul>
+            <li *ngFor="let item of arrList">{{item}}</li>
+        </ul>
+    </div>
+
+    <!-- .Used to shoe the read more text -->
+    <app-read-more class="mat-body-1" fxFlex [textCountLimit]="textCountLimit" [plotText]="value" *ngIf="showReadMore">
+    </app-read-more>
+
+</div>

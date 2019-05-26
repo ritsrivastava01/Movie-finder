@@ -1,0 +1,15 @@
+:host{
+    .card {
+        max-width: 100%;
+      }
+      mat-card-content{
+        
+            .mat-card-image{
+                margin: 0px;
+              }
+      }
+      
+      .header-image {
+        background-size: cover;
+      }
+}

@@ -1,0 +1,39 @@
+{
+  "shared": {
+    "movie-app-title": "Movie Finder",
+    "search": "Search",
+    "featured": "Feature"
+  },
+
+  "search": {
+    "plot": "Plot",
+    "search-text-required": "The movie title is required.",
+    "search-movie-btn": "Search Movie",
+    "search-title": "Movie Finder - search movies by title",
+    "search-subtitle": "Please search with another keyword"
+  },
+
+  "movie-layout": {
+    "title": "Title",
+    "year": "Year",
+    "rated": "Rated",
+    "released": "Released",
+    "runtime": "Runtime",
+    "genre": "Genre",
+    "director": "Director",
+    "writer": "Writer",
+    "actors": "Actors",
+    "plot": "Plot",
+    "language": "Language",
+    "awards": "Awards",
+    "poster": "Poster",
+    "list-of-ratings": "List of ratings",
+    "imdbRating": "Imdb Rating",
+    "imdbVotes": "Imdb Votes",
+    "type": "Type",
+    "read-more": "read more...",
+    "movie-found": "Movie '{{title}}' found successfully",
+    "no-movie-found": "OOPS, movie not found!!!",
+    "poster-not-available": "Poster is not available!!!!"
+  }
+}
