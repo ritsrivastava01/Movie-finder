@@ -14,7 +14,7 @@ export class MovieService {
   constructor(private httpClient: HttpClient) { }
 
   // Movie search service call
-  searchMovies(title: string, plot: string) {
+  searchMovies = (title: string, plot: string): Observable<IMovie> => {
     const searchUrl = `${this.searchUrl}?apiKey=${this.apiKey}&t=${title}&plot=${plot}`;
     return this.httpClient.get<IMovie>(searchUrl, { responseType: 'json' });
   }

@@ -6,6 +6,12 @@ import { MatCardModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { TranslateModule } from '@ngx-translate/core';
 import { SharedModule } from '../share/shared.module';
+import { Routes, RouterModule } from '@angular/router';
+
+
+const routes: Routes = [
+  { path: '', component: FeatureComponent }
+];
 
 @NgModule({
   declarations: [
@@ -18,6 +24,7 @@ import { SharedModule } from '../share/shared.module';
     FlexLayoutModule,
     SharedModule,
     TranslateModule,
+    RouterModule.forChild(routes)
   ]
 })
 export class FeaturedModule { }

@@ -33,7 +33,7 @@ export class HeaderComponent implements OnInit {
   }
 
   /**
-   * Navigate the page between 'Search' and 'Featured'
+   * Navigate between 'Search' and 'Featured'
    * @param  {string} pageName
    */
   loadPage = (pageName: string) => {

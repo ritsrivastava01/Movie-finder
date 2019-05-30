@@ -7,13 +7,14 @@ import { CONSTANTS } from '../../share/constants/constants';
 @Component({
   selector: 'app-feature',
   templateUrl: './feature.component.html',
+  styleUrls: ['./feature.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FeatureComponent implements OnInit {
 
   selectedMovies: Observable<Array<IMovie>>;
 
-  constructor(private movieService: MovieService) { }
+  constructor(public movieService: MovieService) { }
 
   ngOnInit() {
 

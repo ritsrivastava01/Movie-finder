@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges, SimpleChange } from '@angular/core';
 
 @Component({
   selector: 'app-read-more',
@@ -22,6 +22,7 @@ export class ReadMoreComponent implements OnChanges {
    * @returns void
    */
   ngOnChanges(changes: SimpleChanges): void {
+    this.plotText = changes.plotText.currentValue;
     this.showReadMore = this.plotText.length > this.textCountLimit ? true : false;
     this.trimText();
   }

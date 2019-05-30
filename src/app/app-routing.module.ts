@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './search/search/search.component';
-import { FeatureComponent } from './featured/feature/feature.component';
 
 // Routing in the application
 const routes: Routes = [
   { path: 'search', component: SearchComponent },
-  { path: 'featured', component: FeatureComponent },
+  { path: 'featured', loadChildren: './featured/featured.module#FeaturedModule'},
 ];
 
 @NgModule({

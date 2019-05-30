@@ -17,10 +17,10 @@ export class SearchComponent implements OnInit {
   plots: Array<IPlot> = [];
   searchedMovie: IMovie;
 
-  constructor(private fb: FormBuilder,
-    private movieService: MovieService,
-    private snackBar: MatSnackBar,
-    private translateService: TranslateService) { }
+  constructor(public movieService: MovieService,
+              private fb: FormBuilder,
+              private snackBar: MatSnackBar,
+              private translateService: TranslateService) { }
 
 
   ngOnInit() {

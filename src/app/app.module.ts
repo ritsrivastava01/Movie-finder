@@ -4,7 +4,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { FeaturedModule } from './featured/featured.module';
 import { SearchModule } from './search/search.module';
 import { TranslateModule, TranslateLoader, } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
@@ -25,7 +24,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
-    FeaturedModule,
     SearchModule,
     SharedModule,
     HttpClientModule,
