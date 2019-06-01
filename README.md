@@ -27,21 +27,21 @@ This application covers following feature:
 
 ## Code Structure
 
-The application is split in below component:
-1. Shared Component:Contains all shared component across the application:
+The application is splited in below component:
+1. Shared Component: Contains all shared component across the application:
     * Header Component: Application header contains **search**, **Feature** component and Language change option.
     * Application constants
     * Movie-row-Info: used to show the movie info.
     * Read-more: read more component
 2. Service:
     * Movie.service.ts: used to load the movie 
-3. featured: contains below component:
+3. Featured: contains below component:
     * Feature component: show the feature component
     * Feature-Movie-Layout component: used to show the featured movie in card layout
  4. Search component:
- Used to search the movie and show in card layout.
- * search component: show the search component:
- * Movie-layout component: show the searched movie in card layout.      
+    Used to search the movie and show in card layout.
+    * search component: show the search component:
+    * Movie-layout component: show the searched movie in card layout.      
 
 ## Build
 
@@ -49,6 +49,7 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 ## Running unit tests
 
-Yet to come!!!
+included in the code
+
 ## URL
 [Movie Finder](https://ritsrivastava01.github.io/Movie-finder/)
