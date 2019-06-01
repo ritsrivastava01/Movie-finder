@@ -22,6 +22,7 @@ This application covers following feature:
 5. Feature page is already loaded by two movie:
     * Titanic
     * Gladiator 
+6. Lazy load on Feature compoment
 
 
 ## Code Structure
